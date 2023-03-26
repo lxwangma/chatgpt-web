@@ -11,4 +11,5 @@ COPY . /app
 WORKDIR /app
 ENV my_api_key empty
 ENV dockerrun yes
+RUN sed -i 's/websocket\.cookies\.get("access-token")/websocket.cookies.get("access-token-unsecure")/' /root/.local/lib/python3.9/site-packages/gradio/routes.py
 CMD ["python3", "-u", "ChuanhuChatbot.py", "2>&1", "|", "tee", "/var/log/application.log"]

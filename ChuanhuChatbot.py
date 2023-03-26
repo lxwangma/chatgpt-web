@@ -261,7 +261,7 @@ with gr.Blocks(css=customCSS, theme=small_and_beautiful_theme) as demo:
     transfer_input_args = dict(
         fn=transfer_input, inputs=[user_input], outputs=[user_question, user_input, submitBtn, cancelBtn], show_progress=True
     )
-    
+
     get_usage_args = dict(
         fn=get_usage, inputs=[user_api_key], outputs=[usageTxt], show_progress=False
     )
@@ -326,7 +326,7 @@ with gr.Blocks(css=customCSS, theme=small_and_beautiful_theme) as demo:
         show_progress=True,
     )
     reduceTokenBtn.click(**get_usage_args)
-    
+
     # ChatGPT
     keyTxt.change(submit_key, keyTxt, [user_api_key, status_display]).then(**get_usage_args)
 
@@ -391,11 +391,11 @@ with gr.Blocks(css=customCSS, theme=small_and_beautiful_theme) as demo:
 
 logging.info(
     colorama.Back.GREEN
-    + "\n川虎的温馨提示：访问 http://localhost:7860 查看界面"
+    + "\n温馨提示：访问 http://localhost:7860 查看界面"
     + colorama.Style.RESET_ALL
 )
 # 默认开启本地服务器，默认可以直接从IP访问，默认不创建公开分享链接
-demo.title = "川虎ChatGPT 🚀"
+demo.title = "Java极客技术🚀"
 
 if __name__ == "__main__":
     reload_javascript()
