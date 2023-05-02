@@ -29,7 +29,7 @@ CONCURRENT_COUNT = 100 # 允许同时使用的用户数量
 SIM_K = 5
 INDEX_QUERY_TEMPRATURE = 1.0
 
-title = """<h1 align="left" style="min-width:200px; margin-top:0;">猿地崛起 🚀</h1>"""
+title = """<h1 align="left" style="min-width:200px; margin-top:0;">这里可以改名字</h1>"""
 description = """\
 <div align="center" style="margin:16px 0">
 此App使用 `gpt-3.5-turbo` 大语言模型
